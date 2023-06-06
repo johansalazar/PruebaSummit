@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "674a3f51-417f-4bd7-b2cf-867f8d36572d",
+		"name": "SummitSystems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6630377"
+	},
+	"item": [
+		{
+			"name": "valorNumero",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "valorDefinicion",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "prueba numero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/Test?val=10000",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"Test"
+					],
+					"query": [
+						{
+							"key": "val",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba palabra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"input\":\"Hello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44375/api/Test",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"Test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
